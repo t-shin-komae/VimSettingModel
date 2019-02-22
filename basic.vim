@@ -1,0 +1,27 @@
+" Basic setup, including encoding, acceleration, backspace
+
+" Encoding ------------------------------------------------------------
+set encoding=utf-8      " Sets the encoding used inside vim.
+set fileencoding=utf-8  " when writing a file.
+set fileencodings=utf-8 " when reading a file.
+set bomb                " BOM is prepended. (when binary option is on, BOM is not prepended)
+
+" Making vim faster
+set ttyfast
+set lazyredraw
+
+"" Fix backspace indent ------------------------------------------------
+set backspace=indent,eol,start
+
+"" Directories for swp files -------------------------------------------
+set nobackup
+set noswapfile
+
+" File format setting (this only works on creating new buffer) ---------
+set fileformats=unix,dos,mac
+
+" complete option 
+set completeopt=menuone,preview
+
+"vim-terminal settings
+tnoremap <Esc> <C-\><C-n>
