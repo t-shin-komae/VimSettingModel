@@ -1,5 +1,0 @@
-[[plugins]]# license unknown
-repo='gosukiwi/vim-atom-dark'
-
-[[plugins]]
-repo = 'itchyny/lightline'
