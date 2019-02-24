@@ -3,4 +3,4 @@
 runtime! basic.vim
 runtime! visual.vim
 runtime! mapping.vim
-runtime! deinload.vim
+runtime! plug_load.vim
