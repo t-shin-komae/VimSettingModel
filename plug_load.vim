@@ -1,3 +1,8 @@
+set runtimepath+=~/.config/nvim/plug/lazy
+runtime! lsp.vim
+runtime! deoplete.vim
+runtime! neosnippet.vim
+
 set runtimepath+=~/.config/nvim/plug/non_lazy
 runtime! lightline.vim
 runtime! nerdtree-git-plugin.vim
@@ -22,4 +27,15 @@ Plug 'tpope/vim-commentary'
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight' 
 
+Plug 'autozimu/LanguageClient-neovim', {
+            \ 'branch': 'next',
+            \ 'do': 'bash install.sh',
+            \ }
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+
 call plug#end()
+runtime! deoplete.vim
