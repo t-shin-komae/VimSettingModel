@@ -25,3 +25,4 @@ set completeopt=menuone,preview
 
 "vim-terminal settings
 tnoremap <Esc> <C-\><C-n>
+
