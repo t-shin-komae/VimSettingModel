@@ -2,8 +2,8 @@
 "" Visual Settings
 "*****************************************************************************
 
-colorscheme atom-dark
 syntax on
+colorscheme atom-dark
 set number
 let no_buffers_menu=1
 
@@ -29,4 +29,3 @@ set modelines=10
 let g:tex_conceal='agbdm'
 set conceallevel=2
 set concealcursor=""
-
