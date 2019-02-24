@@ -26,7 +26,7 @@ set tabstop=4
 set shiftwidth=4
 
 " complete option 
-set completeopt=menuone,preview
+set completeopt=menu
 
 "vim-terminal settings
 tnoremap <Esc> <C-\><C-n>
