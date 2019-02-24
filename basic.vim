@@ -20,6 +20,11 @@ set noswapfile
 " File format setting (this only works on creating new buffer) ---------
 set fileformats=unix,dos,mac
 
+" Tab settings
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
 " complete option 
 set completeopt=menuone,preview
 
