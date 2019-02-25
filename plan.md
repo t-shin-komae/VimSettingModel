@@ -4,6 +4,7 @@
 ### カラースキーム
 やっぱりAtomでしょ
 repo='gosukiwi/vim-atom-dark'
+いや、https://github.com/cocopon/iceberg.vim/blob/master/README.md があり
 ### ステータスバー
 lightlineに
 ### ファイラー
