@@ -3,7 +3,7 @@
 "*****************************************************************************
 
 syntax on
-colorscheme atom-dark
+colorscheme iceberg
 set number
 let no_buffers_menu=1
 

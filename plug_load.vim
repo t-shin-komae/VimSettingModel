@@ -12,6 +12,8 @@ runtime! devicons.vim
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'joshdick/onedark.vim'
+Plug 'gosukiwi/vim-atom-dark'
+Plug 'cocopon/iceberg.vim'
 
 Plug 'itchyny/lightline.vim'
 
