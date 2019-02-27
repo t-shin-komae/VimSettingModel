@@ -8,8 +8,8 @@ nnoremap k gk
 nnoremap gk k
 
 " Split
-noremap <Leader>h :<C-u>split<CR>
-noremap <Leader>v :<C-u>vsplit<CR>
+noremap <Leader>h :<C-u>split<CR><C-w>j
+noremap <Leader>v :<C-u>vsplit<CR><C-w>l
 
 " buffers
 nmap <silent><Tab> :call Mod_move('n')<CR>
