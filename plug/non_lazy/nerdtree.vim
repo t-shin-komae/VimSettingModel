@@ -6,3 +6,6 @@ nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 autocmd VimEnter * execute 'NERDTree'
 autocmd Vimenter * wincmd p
+
+"from https://github.com/scrooloose/nerdtree/issues/635
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
