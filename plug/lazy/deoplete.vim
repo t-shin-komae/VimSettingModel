@@ -7,7 +7,4 @@ function! s:deocustom()
                 \ 2)
 endfunction
 
-
 autocmd VimEnter * call s:deocustom()
-
-set completeopt=menuone

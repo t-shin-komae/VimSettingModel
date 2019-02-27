@@ -3,7 +3,7 @@ set showtabline=2  " always show tabline
 
 " use lightline-buffer in lightline
 let g:lightline = {
-    \ 'colorscheme': 'one',
+    \ 'colorscheme': 'iceberg',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
