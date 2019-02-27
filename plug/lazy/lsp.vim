@@ -3,6 +3,7 @@ set hidden
 let g:LanguageClient_serverCommands = {
         \ 'rust': ['rustup', 'run', 'stable', 'rls'],
 	\ 'python':['pyls'],
+    \ 'fortran':['fortls','--symbol_skip_mem', '--incrmental_sync', '--autocomplete_no_prefix'],
         \ }
 let g:LanguageClient_useVirtualText=0
 
