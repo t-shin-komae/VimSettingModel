@@ -1,10 +1,18 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-        \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-	\ 'python':['pyls'],
-    \ 'fortran':['fortls','--symbol_skip_mem', '--incrmental_sync', '--autocomplete_no_prefix'],
-        \ }
+            \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+            \ 'python':['pyls'],
+            \ 'fortran':['fortls','--symbol_skip_mem', '--incrmental_sync', '--autocomplete_no_prefix'],
+            \ 'java':['java','-Declipse.application=org.eclipse.jdt.ls.core.id1',
+            \ '-Dosgi.bundles.defaultStartLevel=4',
+            \ '-Declipse.product=org.eclipse.jdt.ls.core.product',
+            \ '-noverify',
+            \ '-Xms1G',
+            \ '-jar', '$JDT_LANGUAGE_SERVER_DIR/plugins/org.eclipse.equinox.launcher_1.*.jar', 
+            \ '-configuration', '$JDT_LANGUAGE_SERVER_DIR/config_linux/',
+            \ '-data', getcwd()],
+            \ }
 let g:LanguageClient_useVirtualText=0
 
 function LC_maps()
