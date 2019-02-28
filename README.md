@@ -7,7 +7,8 @@ NOTE: installerはテスト段階です.使用する際はご注意を
 
 # Requirement
 - vim-plug
-- LanguageServers(rls,fortls,pyls)
+- LanguageServers(rls,fortls,pyls,[jdt-language-server](https://download.eclipse.org/jdtls/snapshots/?d))
+- `$JDT_LANGUAGE_SERVER_DIR`が上記のeclipseのホームページからダウンロードしたファイルを展開したフォルダーにセットされていること.
 - CicaフォントなどのNerdtreeフォント
 # Feature
 - LanguageClientとdeopleteとneosnippetによる強力な補完&コードチェック.
