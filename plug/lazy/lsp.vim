@@ -1,5 +1,6 @@
 set hidden
 
+let g:jdt_executable_jar=expand($JDT_LANGUAGE_SERVER_DIR .  '/plugins/org.eclipse.equinox.launcher_1.*.jar')
 let g:LanguageClient_serverCommands = {
             \ 'rust': ['rustup', 'run', 'stable', 'rls'],
             \ 'python':['pyls'],
@@ -9,8 +10,8 @@ let g:LanguageClient_serverCommands = {
             \ '-Declipse.product=org.eclipse.jdt.ls.core.product',
             \ '-noverify',
             \ '-Xms1G',
-            \ '-jar', '$JDT_LANGUAGE_SERVER_DIR/plugins/org.eclipse.equinox.launcher_1.*.jar', 
-            \ '-configuration', '$JDT_LANGUAGE_SERVER_DIR/config_linux/',
+            \ '-jar', g:jdt_executable_jar,
+            \ '-configuration', expand($JDT_LANGUAGE_SERVER_DIR) . '/config_linux/',
             \ '-data', getcwd()],
             \ }
 let g:LanguageClient_useVirtualText=0
