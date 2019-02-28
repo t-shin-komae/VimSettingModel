@@ -3,6 +3,8 @@
 自分のneovim環境を公開します.
 LSPを使った高機能なplugin活用の例となれば良いと思います.
 
+NOTE: installerはテスト段階です.使用する際はご注意を
+
 # Requirement
 - vim-plug
 - LanguageServers(rls,fortls,pyls)
