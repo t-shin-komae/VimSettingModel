@@ -29,10 +29,12 @@ Plug 'tpope/vim-commentary' "VIM
 
 "Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "GPL3.0
 
-Plug 'autozimu/LanguageClient-neovim', { "MIT
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "MIT
+
+Plug 'autozimu/LanguageClient-neovim', { 
             \ 'branch': 'next',
             \ 'do': 'bash install.sh',
-            \ }
+            \ } "MIT
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
