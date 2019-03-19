@@ -1,5 +1,14 @@
 set hidden
 
+let g:LanguageClient_autoStart= 1
+
+augroup filetype_load
+    autocmd!
+    autocmd BufReadPost *.rs setlocal filetype=rust
+    autocmd BufReadPost *.py setlocal filetype=python
+    autocmd BufReadPost *.java setlocal filetype=java
+augroup END
+
 let g:jdt_executable_jar=expand($JDT_LANGUAGE_SERVER_DIR .  '/plugins/org.eclipse.equinox.launcher_1.*.jar')
 let g:LanguageClient_serverCommands = {
             \ 'rust': ['rustup', 'run', 'stable', 'rls'],
@@ -15,6 +24,9 @@ let g:LanguageClient_serverCommands = {
             \ '-data', getcwd()],
             \ }
 let g:LanguageClient_useVirtualText=0
+let g:LanguageClient_loggingFile = '/tmp/LanguageClient.log'
+let g:LanguageClient_loggingLevel = 'INFO'
+let g:LanguageClient_serverStderr = '/tmp/LanguageServer.log'
 
 function LC_maps()
     if has_key(g:LanguageClient_serverCommands, &filetype)
@@ -27,6 +39,5 @@ endfunction
 
 autocmd FileType * call LC_maps()
 
-let g:LanguageClient_autoStart= 1
 
 set signcolumn=yes

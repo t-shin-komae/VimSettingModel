@@ -4,7 +4,7 @@
 set encoding=utf-8      " Sets the encoding used inside vim.
 set fileencoding=utf-8  " when writing a file.
 set fileencodings=utf-8 " when reading a file.
-set bomb                " BOM is prepended. (when binary option is on, BOM is not prepended)
+set nobomb                " BOM is not prepended. (when binary option is on, BOM is not prepended)
 
 " Making vim faster
 set ttyfast

@@ -44,5 +44,7 @@ Plug 'Shougo/neosnippet-snippets' "MIT
 Plug 'airblade/vim-gitgutter' "MIT
 Plug 'tpope/vim-fugitive' "VIM LICENCE
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 runtime! deoplete.vim
