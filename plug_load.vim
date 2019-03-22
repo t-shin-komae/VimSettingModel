@@ -8,6 +8,7 @@ runtime! lightline.vim
 runtime! nerdtree-git-plugin.vim
 runtime! nerdtree.vim
 runtime! devicons.vim
+runtime! winresizer.vim
 
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -45,6 +46,8 @@ Plug 'airblade/vim-gitgutter' "MIT
 Plug 'tpope/vim-fugitive' "VIM LICENCE
 
 Plug 'jiangmiao/auto-pairs'
+
+Plug 'simeji/winresizer'
 
 call plug#end()
 runtime! deoplete.vim
