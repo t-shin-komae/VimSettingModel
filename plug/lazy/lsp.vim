@@ -22,6 +22,7 @@ let g:LanguageClient_serverCommands = {
             \ '-jar', g:jdt_executable_jar,
             \ '-configuration', expand($JDT_LANGUAGE_SERVER_DIR) . '/config_linux/',
             \ '-data', getcwd()],
+            \ 'cpp':['clangd']
             \ }
 let g:LanguageClient_useVirtualText=0
 let g:LanguageClient_loggingFile = '/tmp/LanguageClient.log'
