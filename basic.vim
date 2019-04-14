@@ -31,3 +31,14 @@ set completeopt=menu
 "vim-terminal settings
 tnoremap <Esc> <C-\><C-n>
 
+" for cuda
+
+au BufNewFile,BufRead *.cu set ft=cuda
+au BufNewFile,BufRead *.cuh set ft=cuda
+
+" for mouse
+set mouse=nv
+
+"for clipboard
+set clipboard=unnamed
+
