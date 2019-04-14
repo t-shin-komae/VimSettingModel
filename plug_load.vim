@@ -49,5 +49,7 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'simeji/winresizer'
 
+" Plug 'w0rp/ale',{'on':':CudaStart'} " BSD 1 -Clause Simplified
+
 call plug#end()
 runtime! deoplete.vim
