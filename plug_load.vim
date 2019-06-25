@@ -9,6 +9,8 @@ runtime! nerdtree-git-plugin.vim
 runtime! nerdtree.vim
 runtime! devicons.vim
 runtime! winresizer.vim
+runtime! vista.vim
+runtime! commentary.vim
 
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -45,7 +47,7 @@ Plug 'Shougo/neosnippet-snippets' "MIT
 Plug 'airblade/vim-gitgutter' "MIT
 Plug 'tpope/vim-fugitive' "VIM LICENCE
 
-"Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'simeji/winresizer'
 
@@ -55,6 +57,10 @@ Plug 'stevearc/vim-arduino'
 Plug 'lervag/vimtex'
 
 Plug 'cespare/vim-toml'
+
+Plug 'liuchengxu/vista.vim'
+
+Plug 'raingo/vim-matlab'
 
 call plug#end()
 runtime! deoplete.vim
