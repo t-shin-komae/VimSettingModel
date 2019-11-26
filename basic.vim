@@ -36,6 +36,10 @@ tnoremap <Esc> <C-\><C-n>
 au BufNewFile,BufRead *.cu set ft=cuda
 au BufNewFile,BufRead *.cuh set ft=cuda
 
+" for fortran https://cosmo0920.wordpress.com/2011/03/21/gvim%E3%81%AEfortran%E7%94%A8%E8%A8%AD%E5%AE%9A%E3%83%A1%E3%83%A2/
+let fortran_free_source=1
+let fortran_fold = 1
+au! BufRead,BufNewFile *.f90 let b:fortran_do_enddo=1
 " for mouse
 set mouse=nv
 
